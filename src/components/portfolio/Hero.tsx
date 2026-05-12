@@ -16,7 +16,7 @@ export function Hero() {
             STATUS / RUNNING · CHENNAI · IN
           </div>
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-gradient-metal leading-[1.02]">
-            DALBERT<br />JOE J<span className="text-[#2563eb]">.</span>
+            DALBERT<br />JOE J
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
             <span className="mono text-foreground/80">SYSTEMS ARE BUILT BY THOSE WHO ENTER THE UNKNOWN.</span>
