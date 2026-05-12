@@ -39,8 +39,8 @@ export function BootSequence({ onDone }: { onDone: () => void }) {
           <div className="grid-bg absolute inset-0 opacity-40" />
           <div className="relative mono text-sm md:text-base text-foreground/90 w-[min(560px,90vw)]">
             <div className="mb-4 flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="h-2 w-2 rounded-full bg-[#2563eb] animate-pulse" />
-              DALBERT_JOE.SYSTEM v2026.05
+            <span className="h-2 w-2 rounded-full bg-[#2563eb] animate-pulse" />
+              DJ23.SYSTEM v2026.05
             </div>
             {shown.map((l, idx) => (
               <motion.div
