@@ -11,20 +11,13 @@ export function About() {
           My work focuses on the boundary between <span className="text-foreground">data engineering</span>
           {" "}and <span className="text-foreground">applied AI</span> — designing systems that move from raw signal to deployed inference, with engineered clarity over hype.
         </p>
-
       </div>
-      <div className="md:col-span-5 grid grid-cols-2 gap-3">
-        {[
-          { k: "FOCUS", v: "AI / ML" },
-          { k: "STACK", v: "Python · TS" },
-          { k: "BASE", v: "Chennai, IN" },
-          { k: "STUDY", v: "LICET" },
-        ].map((s) => (
-          <div key={s.k} className="glass metallic-border rounded-xl p-4">
-            <div className="mono text-[10px] text-muted-foreground tracking-widest">{s.k}</div>
-            <div className="mt-1 text-foreground font-medium">{s.v}</div>
-          </div>
-        ))}
+      <div className="md:col-span-5 flex justify-center md:justify-end">
+        <img
+          src="/DALBERT.png"
+          alt="Dalbert Joe J"
+          className="w-64 h-72 object-cover object-top rounded-2xl metallic-border"
+        />
       </div>
     </div>
   );
