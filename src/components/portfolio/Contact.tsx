@@ -15,10 +15,12 @@ export function Contact() {
            className="edge-sweep metallic-border rounded-full px-5 py-3 text-sm bg-[#121f82] hover:bg-[#1a2aa8] text-white inline-flex items-center gap-2">
           <Mail size={16} /> dalbertjoe@example.com
         </a>
-        <a href="#" className="edge-sweep metallic-border rounded-full px-5 py-3 text-sm glass hover:bg-white/10 inline-flex items-center gap-2">
+        <a href="https://github.com/Dalbert-joe/" target="_blank" rel="noopener noreferrer"
+           className="edge-sweep metallic-border rounded-full px-5 py-3 text-sm glass hover:bg-white/10 inline-flex items-center gap-2">
           <Github size={16} /> GitHub
         </a>
-        <a href="#" className="edge-sweep metallic-border rounded-full px-5 py-3 text-sm glass hover:bg-white/10 inline-flex items-center gap-2">
+        <a href="https://www.linkedin.com/in/dalbert-joe-j/" target="_blank" rel="noopener noreferrer"
+           className="edge-sweep metallic-border rounded-full px-5 py-3 text-sm glass hover:bg-white/10 inline-flex items-center gap-2">
           <Linkedin size={16} /> LinkedIn
         </a>
         <a href="https://www.instagram.com/itz_your_dj_/?hl=en" target="_blank" rel="noopener noreferrer"
