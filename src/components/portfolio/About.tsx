@@ -11,9 +11,7 @@ export function About() {
           My work focuses on the boundary between <span className="text-foreground">data engineering</span>
           {" "}and <span className="text-foreground">applied AI</span> — designing systems that move from raw signal to deployed inference, with engineered clarity over hype.
         </p>
-        <p className="mono text-sm text-muted-foreground">
-          // I treat each project as a system: instrumented, observable, and tuned for production.
-        </p>
+
       </div>
       <div className="md:col-span-5 grid grid-cols-2 gap-3">
         {[

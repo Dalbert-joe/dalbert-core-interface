@@ -1,6 +1,6 @@
-import { Award, Briefcase, GraduationCap } from "lucide-react";
+import { Award, Briefcase, GraduationCap, Trophy } from "lucide-react";
 
-const items = [
+const experienceItems = [
   {
     icon: Briefcase,
     tag: "FREELANCE / FULL-STACK",
@@ -22,6 +22,9 @@ const items = [
     ],
     tags: ["Community", "Outreach"],
   },
+];
+
+const publicationItems = [
   {
     icon: Award,
     tag: "PUBLICATION · BEST PAPER AWARD",
@@ -31,13 +34,21 @@ const items = [
       "Best Paper Award at the International Conference on Artificial Intelligence and Data Science.",
       "Research focused on AI-powered football analytics and automated tactical performance evaluation using intelligent video analysis systems.",
       "Co-authors: Siddheshwaran U.R., Jeff Reuben S I, Antony Thomas Sharone A, Ananya S V.",
-      "Mentors: Ms. Christina J, Mr. Srivatsava M.",
+      "Mentors: Mrs. Christina J, Mr. Srivatsava M.",
     ],
     tags: ["Computer Vision", "Sports Analytics", "Research"],
   },
 ];
 
-export function Experience() {
+const achievementsList = [
+  "Finalist — BrainStormX 2026",
+  "Top 10 Finalist — Infosys TechZooka",
+  "Winner — IEEE Codeathon",
+  "Winner — Try.Code <> Codeathon",
+  "Best Mobile Short Film — GIFFI 2025",
+];
+
+function ItemList({ items }: { items: typeof experienceItems }) {
   return (
     <div className="space-y-5">
       {items.map((it, i) => {
@@ -73,6 +84,28 @@ export function Experience() {
           </div>
         );
       })}
+    </div>
+  );
+}
+
+export function Experience() {
+  return <ItemList items={experienceItems} />;
+}
+
+export function Publication() {
+  return <ItemList items={publicationItems} />;
+}
+
+export function Achievements() {
+  return (
+    <div className="grid sm:grid-cols-2 gap-4">
+      {achievementsList.map((a) => (
+        <div key={a}
+             className="edge-sweep glass-strong metallic-border rounded-xl p-5 flex items-start gap-3 hover:bg-white/[0.07] transition-colors">
+          <div className="glass rounded-lg p-2.5 shrink-0"><Trophy size={16} className="text-[#2563eb]" /></div>
+          <div className="text-sm md:text-base text-foreground/90 leading-snug pt-1">{a}</div>
+        </div>
+      ))}
     </div>
   );
 }

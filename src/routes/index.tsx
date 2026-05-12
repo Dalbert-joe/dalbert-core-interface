@@ -6,7 +6,7 @@ import { Hero } from "@/components/portfolio/Hero";
 import { Section } from "@/components/portfolio/Section";
 import { About } from "@/components/portfolio/About";
 import { Projects } from "@/components/portfolio/Projects";
-import { Experience } from "@/components/portfolio/Experience";
+import { Experience, Publication, Achievements } from "@/components/portfolio/Experience";
 import { Skills } from "@/components/portfolio/Skills";
 import { Contact } from "@/components/portfolio/Contact";
 
@@ -21,24 +21,30 @@ function Index() {
       {!booted && <BootSequence onDone={() => setBooted(true)} />}
       <Navbar />
       <Hero />
-      <Section id="about" label="01 / IDENTITY" title="About the system.">
+      <Section id="about" label="01 / IDENTITY" title="About me.">
         <About />
       </Section>
       <Section id="projects" label="02 / DEPLOYED MODULES" title="Selected projects.">
         <Projects />
       </Section>
-      <Section id="experience" label="03 / TIMELINE" title="Experience & publication.">
+      <Section id="experience" label="03 / TIMELINE" title="Experience.">
         <Experience />
       </Section>
-      <Section id="skills" label="04 / CAPABILITIES" title="Skills & beyond engineering.">
+      <Section id="publication" label="04 / RESEARCH" title="Publication.">
+        <Publication />
+      </Section>
+      <Section id="achievements" label="05 / RECOGNITION" title="Achievements.">
+        <Achievements />
+      </Section>
+      <Section id="skills" label="06 / CAPABILITIES" title="Skills & beyond engineering.">
         <Skills />
       </Section>
-      <Section id="contact" label="05 / I/O" title="Contact.">
+      <Section id="contact" label="07 / I/O" title="Contact.">
         <Contact />
       </Section>
       <footer className="border-t border-white/5 py-10 mt-10">
         <div className="mx-auto max-w-6xl px-6 flex flex-wrap items-center justify-between gap-3">
-          <div className="mono text-xs text-muted-foreground">© DALBERT JOE J · ALL SYSTEMS RESERVED</div>
+          <div className="mono text-xs text-muted-foreground">© DALBERT JOE J</div>
           <div className="mono text-xs text-foreground tracking-[0.3em]">SINCE 2007.</div>
         </div>
       </footer>

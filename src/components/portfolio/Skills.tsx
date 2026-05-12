@@ -2,11 +2,17 @@ const technical = [
   "Python", "C", "Java", "TypeScript",
   "Machine Learning", "OpenCV", "SQL", "PL/SQL",
   "React", "Node.js", "Supabase", "REST APIs",
+  "GitHub", "Git", "MongoDB", "DSA",
+  "Scikit-learn", "Data Engineering", "DBMS", "JavaScript",
+  "Data Visualization", "Inference",
 ];
 
 const creative = [
   "Music Production", "Lyric Writing", "Pianist",
-  "Story Writing", "Video Editing", "Public Speaking / Rap",
+  "Story Writing", "Video Editing", "Public Speaking", "Rap",
+  "Show Hosting", "Leadership", "Team Management",
+  "Quick to Social Networking", "Task Management",
+  "Consistent AI Video Generation", "Content Creation", "Live Streaming",
 ];
 
 export function Skills() {
