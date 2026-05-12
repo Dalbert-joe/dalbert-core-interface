@@ -4,6 +4,8 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#publication", label: "Publication" },
+  { href: "#achievements", label: "Achievements" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
@@ -18,7 +20,7 @@ export function Navbar() {
     >
       <div className="glass-strong metallic-border rounded-full px-5 py-2.5 flex items-center justify-between">
         <a href="#top" className="mono text-xs tracking-widest text-foreground/90">
-          DJ<span className="text-[#2563eb]">_</span>SYS
+          DJ<span className="text-[#2563eb]">23</span>
         </a>
         <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
