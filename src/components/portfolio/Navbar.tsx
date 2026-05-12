@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Github, Linkedin } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -30,10 +31,20 @@ export function Navbar() {
             </a>
           ))}
         </div>
-        <a href="#contact"
-           className="edge-sweep metallic-border rounded-full px-4 py-1.5 text-xs mono bg-white/5 text-foreground hover:bg-white/10 transition-colors">
-          CONNECT
-        </a>
+        <div className="flex items-center gap-2">
+          <a href="https://github.com/Dalbert-joe/" target="_blank" rel="noopener noreferrer"
+             className="p-2 text-muted-foreground hover:text-foreground transition-colors">
+            <Github size={16} />
+          </a>
+          <a href="https://www.linkedin.com/in/dalbert-joe-j/" target="_blank" rel="noopener noreferrer"
+             className="p-2 text-muted-foreground hover:text-foreground transition-colors">
+            <Linkedin size={16} />
+          </a>
+          <a href="#contact"
+             className="edge-sweep metallic-border rounded-full px-4 py-1.5 text-xs mono bg-white/5 text-foreground hover:bg-white/10 transition-colors">
+            CONNECT
+          </a>
+        </div>
       </div>
     </motion.nav>
   );
